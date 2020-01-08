@@ -1,0 +1,155 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer .socialBar {
+  list-style: none;
+  background: -webkit-gradient(linear, left top, right top, from(#424242), to(#757575));
+  background: linear-gradient(to right, #424242, #757575);
+  color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  -webkit-transition: none;
+  transition: none;
+  bottom: 50%;
+  left: calc(50% - 50px);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: girar 2s normal 1s;
+          animation: girar 2s normal 1s;
+}
+
+footer .socialBar h3 {
+  font-family: sans-serif;
+}
+
+footer .socialBar li * {
+  font-size: 0rem;
+  margin: 0rem;
+  visibility: hidden;
+}
+
+footer .socialBar:before {
+  content: '';
+  width: 50px;
+  height: 10px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(66, 66, 66, 0.3)), to(rgba(66, 66, 66, 0.1)));
+  background: linear-gradient(to top, rgba(66, 66, 66, 0.3), rgba(66, 66, 66, 0.1));
+  position: absolute;
+  bottom: -10px;
+}
+
+.ColocarBar {
+  list-style: none;
+  background: -webkit-gradient(linear, left top, right top, from(#424242), to(#757575));
+  background: linear-gradient(to right, #424242, #757575);
+  color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.ColocarBar h3 {
+  display: none;
+}
+
+.ColocarBar li * {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+@-webkit-keyframes girar {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes girar {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes colocar {
+  0% {
+    bottom: 50%;
+    left: calc(50% - 50px);
+    border-radius: 50%;
+  }
+  66% {
+    bottom: 50%;
+    left: calc(50% - 50px);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  80% {
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+  }
+}
+
+@keyframes colocar {
+  0% {
+    bottom: 50%;
+    left: calc(50% - 50px);
+    border-radius: 50%;
+  }
+  66% {
+    bottom: 50%;
+    left: calc(50% - 50px);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  80% {
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+  }
+}
+
+/*li *{
+            font-size: 2rem;
+            margin: 1rem;
+            visibility: hidden;
+        }*/
+/*# sourceMappingURL=main.css.map */
